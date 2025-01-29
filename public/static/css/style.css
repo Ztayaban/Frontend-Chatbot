@@ -39,12 +39,11 @@ body {
     transition: all .5s ease-in-out;
 }
 
-/* CONTENT ISOPEN */
+/* CONTENT IS OPEN */
 .chatbox--active {
     transform: translateY(-40px);
     z-index: 123456;
     opacity: 1;
-
 }
 
 /* BUTTON */
@@ -59,7 +58,6 @@ body {
     outline: none;
     cursor: pointer;
 }
-
 
 /* HEADER */
 .chatbox__header {
@@ -198,10 +196,95 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .IFSULOGO {
     width: 100px;
     height: 100px;
     background: url('logo.png') no-repeat center;
     background-size: contain;
     margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chatbox__support {
+        width: 280px;
+        height: 400px;
+    }
+
+    .chatbox__header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .chatbox__heading--header {
+        font-size: 1rem;
+    }
+
+    .chatbox__description--header {
+        font-size: 0.8rem;
+    }
+
+    .chatbox__footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .chatbox__footer input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .send__button {
+        width: 100%;
+    }
+
+    .IFSULOGO {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbox__support {
+        width: 100%;
+        height: 80vh;
+        border-radius: 0;
+    }
+
+    .chatbox__header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .chatbox__heading--header {
+        font-size: 1rem;
+    }
+
+    .chatbox__description--header {
+        font-size: 0.8rem;
+    }
+
+    .chatbox__footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .chatbox__footer input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .chatbox__button button {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .IFSULOGO {
+        width: 70px;
+        height: 70px;
+    }
 }
