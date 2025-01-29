@@ -32,8 +32,8 @@ body {
     display: flex;
     flex-direction: column;
     background: #eee;
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     z-index: -123456;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -199,8 +199,8 @@ body {
     cursor: pointer;
 }
 .IFSULOGO {
-    width: 100px;
-    height: 100px;
+    width: 7rem;
+    height: 7rem;
     background: url('logo.png') no-repeat center;
     background-size: contain;
     margin-bottom: 20px;
@@ -218,6 +218,10 @@ body {
         width: 4rem;
         height: 4rem;
     }
+    .chatbox__support {
+        width: 30rem;
+        height: 35rem;
+    }
 }
 
 /* Small screens (phones) */
@@ -226,6 +230,11 @@ body {
         width: 5rem;
         height: 5rem;
     }
+
+    .chatbox__support {
+        width: 27.5rem;
+        height: 32.5rem;
+    }
 }
 
 /* Extra small screens */
@@ -233,6 +242,11 @@ body {
     .chatbox__button img {
         width: 6rem;
         height: 6rem;
+    }
+
+    .chatbox__support {
+        width: 25rem;
+        height: 30rem;
     }
 }
 
